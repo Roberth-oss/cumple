@@ -1,0 +1,238 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atardecer Pixelado para Mi Amor</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="sky">
+
+            
+         <!-- CARRUSEL EN EL LUGAR DEL SOL -->
+<div class="sun-carousel">
+    <div class="carousel-slide">
+        <img src="imagen1.jpg" alt="Recuerdo 1">
+        <img src="imagen2.jpg" alt="Recuerdo 2">
+        <img src="imagen3.jpg" alt="Recuerdo 3">
+    </div>
+    <button class="prev" onclick="moveSlide(-1)">❮</button>
+    <button class="next" onclick="moveSlide(1)">❯</button>
+</div>
+
+
+
+
+            <!-- MENÚ PRINCIPAL - LOS PLANETAS DEL AMOR -->
+    <div class="planets-menu">
+        <div class="planet mercury" style="top:10%; left:10%;">
+            <div class="planet-tooltip"> Mercurio
+            ercurioMercurio</div>
+
+
+        </div>
+        <div class="planet venus" style="top:20%; left:25%;">
+            <div class="planet-tooltip">Venus</div>
+        </div>
+        <div class="planet earth" style="top:15%; left:40%;">
+            <div class="planet-tooltip">Tierra</div>
+        </div>
+        <div class="planet mars" style="top:25%; left:55%;">
+            <div class="planet-tooltip">Marte</div>
+        </div>
+        <div class="planet jupiter" style="top:10%; left:70%;">
+            <div class="planet-tooltip">Júpiter</div>
+        </div>
+        <div class="planet saturn" style="top:30%; left:80%;">
+            <div class="planet-tooltip">Saturno</div>
+        </div>
+        <div class="planet uranus" style="top:20%; left:60%;">
+            <div class="planet-tooltip">Urano</div>
+        </div>
+        <div class="planet neptune" style="top:15%; left:90%;">
+            <div class="planet-tooltip">Neptuno</div>
+        </div>
+    </div>
+
+
+         
+
+            <!-- ESTRELLAS -->
+            <div class="stars-container">
+                <div class="star tiny star1"></div>
+                <div class="star small star2"></div>
+                <div class="star medium star3"></div>
+                <div class="star small star4"></div>
+                <div class="star tiny star5"></div>
+                <div class="star medium star6"></div>
+                <div class="star small star7"></div>
+                <div class="star tiny star8"></div>
+                <div class="star medium star9"></div>
+                <div class="star small star10"></div>
+                <div class="star tiny star11"></div>
+                <div class="star medium star12"></div>
+                <div class="star small star13"></div>
+                <div class="star tiny star14"></div>
+                <div class="star medium star15"></div>
+                <div class="star small star16"></div>
+                <div class="star tiny star17"></div>
+                <div class="star medium star18"></div>
+                <div class="star small star19"></div>
+                <div class="star tiny star20"></div>
+            </div>
+
+            <!-- MENSAJE SECRETO -->
+            <div class="secret-message">Para mi princesa</div>
+
+
+        </div>
+
+        <!-- SECCIONES DE CONTENIDO PARA CADA PLANETA -->
+        <div id="mercury-content" class="planet-content">
+            <button class="close-btn" onclick="closePlanetContent()">×</button>
+            <div class="content-box">
+                <h2>💫 Mercurio: Nuestro Primer Encuentro</h2>
+                <p>Aquí cuenta la historia de cómo se conocieron...</p>
+                <div class="memory-text">
+                    <p>¿Recuerdas cuando nos vimos por primera vez? Era [fecha] y [descripción del momento].</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="venus-content" class="planet-content">
+            <button class="close-btn" onclick="closePlanetContent()">×</button>
+            <div class="content-box">
+                <h2>🌺 Venus: Las Cosas que Amo de Ti</h2>
+                <p>Tu sonrisa, tu forma de ser, esos pequeños detalles que me enamoran...</p>
+                <div class="reasons-list">
+                    <p>• La forma en que te ríes cuando soy gracioso</p>
+                    <p>• Tu bondad con los demás</p>
+                    <p>• Esa mirada que solo tú tienes</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="earth-content" class="planet-content">
+            <button class="close-btn" onclick="closePlanetContent()">×</button>
+            <div class="content-box">
+                <h2>🌍 Tierra: Nuestros Lugares Especiales</h2>
+                <p>Todos los sitios que hemos hecho nuestros...</p>
+                <div class="places-map">
+                    <p>📍 [Lugar de su primera cita]</p>
+                    <p>📍 [Su restaurante favorito]</p>
+                    <p>📍 [El parque donde siempre pasean]</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="mars-content" class="planet-content">
+            <button class="close-btn" onclick="closePlanetContent()">×</button>
+            <div class="content-box">
+                <h2>🔴 Marte: Nuestras Aventuras</h2>
+                <p>Esos momentos emocionantes que hemos vivido juntos...</p>
+                <div class="adventures">
+                    <p>🚀 [Aventura 1 - como un viaje especial]</p>
+                    <p>🚀 [Aventura 2 - algún momento divertido]</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="jupiter-content" class="planet-content">
+            <button class="close-btn" onclick="closePlanetContent()">×</button>
+            <div class="content-box">
+                <h2>🪐 Júpiter: Nuestros Sueños</h2>
+                <p>Todo lo que queremos lograr juntos en el futuro...</p>
+                <div class="dreams">
+                    <p>✨ Viajar a [lugar soñado]</p>
+                    <p>✨ [Otro sueño o meta]</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="saturn-content" class="planet-content">
+            <button class="close-btn" onclick="closePlanetContent()">×</button>
+            <div class="content-box">
+                <h2>🪐 Saturno: Nuestros Anillos de Amor</h2>
+                <p>Los momentos que nos unen como los anillos de Saturno...</p>
+                <div class="bonding">
+                    <p>💍 Nuestra primera vez [algo especial]</p>
+                    <p>💍 Ese día que [momento significativo]</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="uranus-content" class="planet-content">
+            <button class="close-btn" onclick="closePlanetContent()">×</button>
+            <div class="content-box">
+                <h2>🔵 Urano: Nuestras Promesas</h2>
+                <p>Las promesas que te hago para siempre...</p>
+                <div class="promises">
+                    <p>🤝 Prometo siempre escucharte</p>
+                    <p>🤝 Prometo hacerme reír cada día</p>
+                    <p>🤝 Prometo ser tu apoyo incondicional</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="neptune-content" class="planet-content">
+            <button class="close-btn" onclick="closePlanetContent()">×</button>
+            
+        </div>
+
+        <script>
+            // Función para mostrar el contenido del planeta
+            function showPlanetContent(planetName) {
+                // Oculta todo el contenido primero
+                document.querySelectorAll('.planet-content').forEach(content => {
+                    content.style.display = 'none';
+                });
+                
+                // Muestra el contenido del planeta clickeado
+                document.getElementById(planetName + '-content').style.display = 'flex';
+            }
+
+            // Función para cerrar el contenido
+            function closePlanetContent() {
+                document.querySelectorAll('.planet-content').forEach(content => {
+                    content.style.display = 'none';
+                });
+            }
+
+            // Agregar event listeners a cada planeta
+            document.querySelectorAll('.planet').forEach(planet => {
+                planet.addEventListener('click', function() {
+                    const planetClass = this.classList[1]; // mercury, venus, earth, etc.
+                    showPlanetContent(planetClass);
+                });
+            });
+        </script>
+
+        <!-- CARRUSEL DE IMÁGENES -->
+
+
+<script>
+let slideIndex = 0;
+
+function moveSlide(step) {
+    const slides = document.querySelectorAll('.carousel-slide img');
+    slideIndex += step;
+
+    if(slideIndex < 0) slideIndex = slides.length - 1;
+    if(slideIndex >= slides.length) slideIndex = 0;
+
+    const offset = -slideIndex * 100;
+    document.querySelector('.carousel-slide').style.transform = `translateX(${offset}%)`;
+}
+
+// Opcional: avanzar automáticamente cada 5 segundos
+setInterval(() => moveSlide(1), 5000);
+</script>
+
+
+</body>
+</html>
+
+    </body>
+
+    </html>
